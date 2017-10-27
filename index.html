@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="./style/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./style/style.css" />
+		<link rel="stylesheet" type="text/css" href="./style/welcome.css" />
+
+		<script src="./script/jquery-3.2.1.min.js"></script>
+
+		<script src="./script/mainScript.js"></script>
+
+		<title>Private Universe</title>
+	</head>
+<body onload="start()">
+	<div class="container">
+		<div id="welcome">
+			<div class="welcome-title">Welcome to the Private Universe</div>
+			<div class="start breath-light">Click</div>
+			<p>Channing Kuo</p>
+		</div>
+		<canvas id="universe"><img src="../" /></canvas>
+	</div>
+
+	<script type="text/javascript">
+		$("#universe").attr("width", $(window).get(0).innerWidth);
+        $("#universe").attr("height", $(window).get(0).innerHeight);
+	</script>
+	<script src="./script/welcome.js"></script>
+</body>
+</html>
