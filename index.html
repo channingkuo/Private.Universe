@@ -17,7 +17,7 @@
 <body onload="start()">
 	<div class="container">
 		<div id="welcome">
-			<div class="welcome-title">Welcome to the Private Universe</div>
+			<div class="welcome-title"></div>
 			<div class="start breath-light">Click</div>
 			<p>Channing Kuo</p>
 		</div>
@@ -25,8 +25,13 @@
 	</div>
 
 	<script type="text/javascript">
-		$("#universe").attr("width", $(window).get(0).innerWidth);
-        $("#universe").attr("height", $(window).get(0).innerHeight);
+		$("#universe").attr("width", $(document.body).width());
+        $("#universe").attr("height", $(document.body).height());
+
+		// 适配宽屏
+		if($(document.body).width() == 1768) {
+			$(document.body).css({'position': 'absolute', 'left': '50%', 'margin-left': '-884px'});
+		}
 	</script>
 	<script src="./script/welcome.js"></script>
 </body>

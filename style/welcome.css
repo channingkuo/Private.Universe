@@ -18,6 +18,7 @@
     animation-fill-mode: forwards;
     perspective: 200px;
     perspective-origin: center;
+    cursor: pointer;
 }
 @keyframes fade-in {
     from { opacity: 0; }
@@ -36,7 +37,6 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8);
     z-index: -100;
     -webkit-filter: blur(20px);
     -moz-filter: blur(20px);
@@ -53,14 +53,12 @@
     position: absolute;
     bottom: 10px;
     left: 10px;
+    font-family: Blackadder ITC;
 }
 .welcome-title {
     opacity: 0;
-    margin-top: 150px;
-    color: white;
-    font-size: 40px;
-    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
-    text-align: center;
+    height: 100%;
+    background: url(../images/welcome.png);
     animation-name: welcome-text;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -83,6 +81,7 @@
     cursor: pointer;
     right: 70px;
     bottom: 20px;
+    font-family: Blackadder ITC;
 }
 .breath-light {
     opacity: 0.8;
