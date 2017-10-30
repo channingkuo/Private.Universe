@@ -14,7 +14,15 @@ function start() {
         gl.depthFunc(gl.LEQUAL);
         // 清除颜色和深度缓存
         gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);
+
+        gl.viewport(0, 0, gl.viewportWidth, gl.viewportHeight);
+        
+        drawTheCelestialBody();
     }
+}
+
+function drawTheCelestialBody() {
+
 }
 
 function initWebGL(canvas) {
