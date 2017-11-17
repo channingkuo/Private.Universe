@@ -1,40 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    	<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
-		<link rel="stylesheet" type="text/css" href="./style/reset.css" />
-		<link rel="stylesheet" type="text/css" href="./style/style.css" />
-		<link rel="stylesheet" type="text/css" href="./style/welcome.css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-		<script src="./script/jquery-3.2.1.min.js"></script>
-		<script src="./script/mainScript.js"></script>
+<head>
+    <title>Three</title>
+    <meta charset=utf-8>
+    <style>
+        body {
+            margin: 0;
+        }
 
-		<title>Private Universe</title>
-	</head>
-<body onload="start()">
-	<!-- <audio src="./bgm/bgm.mp3" autoplay="autoplay" loop="loop"></audio> -->
-	<div class="container">
-		<div id="welcome">
-			<div class="welcome-title"></div>
-			<div class="start breath-light">Click</div>
-			<p>Channing Kuo</p>
-		</div>
-		<canvas id="universe">
-			<img src="./images/error.png" class="error" />
-		</canvas>
-	</div>
+        canvas {
+            width: 100%;
+            height: 100%
+        }
+    </style>
+</head>
 
-	<script type="text/javascript">
-		$("#universe").attr("width", $(document.body).width());
-        $("#universe").attr("height", $(document.body).height());
-
-		// 适配宽屏
-		if($(document.body).width() == 1768) {
-			$(document.body).css({'position': 'absolute', 'left': '50%', 'margin-left': '-884px'});
-		}
-	</script>
-	<script src="./script/welcome.js"></script>
+<body>
+    <!-- built files will be auto injected -->
 </body>
+
 </html>
