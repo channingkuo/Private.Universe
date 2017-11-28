@@ -12,12 +12,32 @@ var material = new THREE.MeshBasicMaterial({
     color: 0x00ff00
 })
 var cube = new THREE.Mesh(geometry, material)
-scene.add(cube)
+// scene.add(cube)
+
+var texture1 = new THREE.ImageUtils.loadTexture('./static/images/earthmap1k.jpg')
+var sphere1 = new THREE.Mesh(
+    new THREE.SphereGeometry(50, 100, 100),
+    // new THREE.MeshLambertMaterial({ map: texture1 })
+    new THREE.MeshBasicMaterial({
+        color: 0x00ff00
+    })
+)
+scene.add(sphere1)
+sphere1.position.set(1, 1, 1)
+var texture2 = new THREE.ImageUtils.loadTexture('./static/images/moonmap1k.jpg')
+var sphere2 = new THREE.Mesh(
+    new THREE.SphereGeometry(1, 1, 1),
+    // new THREE.MeshLambertMaterial({ map: texture2 })
+    new THREE.MeshBasicMaterial({
+        color: 0x00ff00
+    })
+)
+// scene.add(sphere2)
 
 camera.position.z = 5
 
-var animate = function() {
-    requestAnimationFrame(animate)
+var animate = function () {
+    // requestAnimationFrame(animate)
 
     cube.rotation.x += 0.1
     cube.rotation.y += 0.1
